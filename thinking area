@@ -1,0 +1,10 @@
+steps:
+
+1-made loop asking for commands and exits when exit command is entered (90% done : exit handling left)
+
+2-parse the command entered by the user and its arguments and save them to be used
+    i-handel the &
+
+3-create a child process to execute command in fore and background
+
+4-error handling (page 2 pdf)

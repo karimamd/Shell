@@ -14,8 +14,10 @@ char** str_split(char* a_str, const char a_delim)
     delim[0] = a_delim;
     delim[1] = 0;
 
+
     */
-/* Count how many elements will be extracted. *//*
+/*Count how many elements will be extracted. *//*
+
 
     while (*tmp)
     {
@@ -27,14 +29,18 @@ char** str_split(char* a_str, const char a_delim)
         tmp++;
     }
 
-    */
+
+*/
 /* Add space for trailing token. *//*
+
 
     count += last_comma < (a_str + strlen(a_str) - 1);
 
-    */
+
+*/
 /* Add space for terminating null string so caller
        knows where the list of returned strings ends. *//*
+
 
     count++;
 
@@ -81,63 +87,4 @@ int main()
 
     return 0;
 }
-
-
 */
-/*
-//
-// Created by kareem on 27/10/17.
-//
-
-#include <string.h>
-#include <stdio.h>
-#include <ctype.h>
-
-void main()
-{
-    //making our own parser
-    char inputLine [512]="";
-    fgets(inputLine,512,stdin);
-    char *temp=inputLine;
-    int i=0;
-    char* startChar,endChar;
-    char words [20] [25];
-    startChar=inputLine;
-
-    for(i=0;i<strlen(inputLine),i++)
-    {
-
-        while(*startChar=" ")
-        {
-            startChar++;
-        }
-        endChar=startChar+1;
-
-        while(*endChar != " ")
-        {
-            endChar++;
-
-        }
-        *endChar="\0"
-        strcpy(words[i],startChar);
-
-        strcpy(inputLine,temp);
-    }
-
-
-
-
-
-
-    while(strcmp(inputLine,"exit")!=0)
-    {
-        printf("Shell> ");
-       fgets(inputLine,512,stdin);
-        //scanf("%s",&inputLine);
-        printf("\ninput is : %s",inputLine);
-
-
-    }
-}
-*//*
-

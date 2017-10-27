@@ -63,6 +63,18 @@ int main() {
         char checkSuccess=fgets(inputLine,512,stdin);
         commandParts=str_split(inputLine,' ');
 
+        //printing it
+        if (commandParts)
+        {
+            int i;
+            for (i = 0; *(commandParts + i); i++)
+            {
+                printf("command parts=[%s] \n", *(commandParts + i));
+                free(*(commandParts + i));
+            }
+            printf("\n");
+            free(commandParts);
+        }
 
     }
     return 0;
